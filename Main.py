@@ -19,10 +19,8 @@ DirPath += '/'
 
 for path, subdirs, files in os.walk(DirPath):
     for name in files:
-        print(os.path.join(path, name))
         if not (str.__contains__(name,StartText)):
             NewFileName = os.path.join(path, StartText + name)
             os.rename(os.path.join(path, name),NewFileName)
-            print(NewFileName)
         else:
             print("Doesnt need to be changed!")
