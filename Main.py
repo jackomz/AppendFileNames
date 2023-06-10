@@ -10,7 +10,7 @@ import turtle
 import tkinter
 from tkinter import filedialog
 import os
-
+StartText = ''
 StartText = tkinter.simpledialog.askstring("StartText", "please enter the text which should be added to the beginning of the filename.")
 #EndText = tkinter.simpledialog.askstring("EndText", "please enter the text which should be added to the ending of the filename.")
 DirPath = filedialog.askdirectory()
